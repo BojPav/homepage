@@ -1,18 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title>Homepage</title>
+{% extends "base.html" %}
 
-    <link rel="stylesheet" href="/assets/css/style.css">
-</head>
-<body>
-    <h1>Moj Homepage</h1>
-    <a href="\">Moj Homepage</a>
-    <a href="\o-meni">O meni</a>
-    <a href="\moji-projekti">Moji projekti</a>
-    <a href="\blog">Blog</a>
-    <a href="\kontakt">Kontakt</a>
+{% block title %}Homepage{% endblock title %}
+
+{% block vsebina %}
+    <h2>Homepage</h2>
     <p>Spicy jalapeno bacon ipsum dolor amet flank ham doner,
         jowl drumstick short loin picanha brisket ham hock capicola shank strip steak pork loin.
         Meatball porchetta ham hock filet mignon hamburger cupim flank prosciutto biltong shank
@@ -38,5 +29,4 @@
         Boudin prosciutto salami flank kielbasa shankle venison jowl corned beef t-bone doner.
         Corned beef drumstick cupim rump, shankle shank tri-tip swine landjaeger jerky bresaola andouille ball tip fatback.
         Pancetta short ribs boudin porchetta, venison pork loin brisket bacon picanha jerky pig pork chop ball tip spare ribs.</p>
-</body>
-</html>
+{% endblock vsebina %}

@@ -1,18 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title>Moji projekti</title>
+{% extends "base.html" %}
 
-    <link rel="stylesheet" href="/assets/css/style.css">
-</head>
-<body>
-    <h1>Moji projekti</h1>
-    <a href="\">Moj Homepage</a>
-    <a href="\o-meni">O meni</a>
-    <a href="\moji-projekti">Moji projekti</a>
-    <a href="\blog">Blog</a>
-    <a href="\kontakt">Kontakt</a>
+{% block title %}Moji projekti{% endblock title %}
+
+{% block vsebina %}
+    <h2>Moji projekti</h2>
     <p>Spicy jalapeno bacon ipsum dolor amet flank ham doner,
         jowl drumstick short loin picanha brisket ham hock capicola shank strip steak pork loin.
         Meatball porchetta ham hock filet mignon hamburger cupim flank prosciutto biltong shank
@@ -27,5 +18,33 @@
         Bacon cow sirloin venison short loin andouille pig frankfurter.
         Pork shoulder t-bone short ribs pig short loin turkey alcatra ribeye prosciutto.
         Frankfurter bacon pork loin meatloaf short loin, rump leberkas burgdoggen ribeye ground round pork belly t-bone.</p>
-</body>
-</html>
+    <div class="row">
+    <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="https://s14.postimg.org/660j53jmp/Calc.jpg" alt="...">
+      <div class="caption">
+        <h3>Calculator by BojPav</h3>
+        <p><a href="http://bojpav-kalkulator.appspot.com/" class="btn btn-primary" role="button">Try it !</a></p>
+      </div>
+    </div>
+    </div>
+        <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="https://s18.postimg.org/9dth7jppl/guess.jpg" alt="...">
+      <div class="caption">
+        <h3>GuessNumber by BojPav</h3>
+        <p><a href="http://bojpav-vgani-skrito-stevilo.appspot.com/" class="btn btn-primary" role="button">Try it !</a></p>
+      </div>
+    </div>
+    </div>
+        <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="https://s11.postimg.org/rst3aztvn/fake.jpg" alt="...">
+      <div class="caption">
+        <h3>Fakebook by BojPav</h3>
+        <p><a href="http://bojpav-fakebook.appspot.com/" class="btn btn-primary" role="button">Visit !</a></p>
+      </div>
+    </div>
+    </div>
+    </div>
+{% endblock vsebina %}

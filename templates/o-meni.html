@@ -1,18 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title>O meni</title>
+{% extends "base.html" %}
 
-    <link rel="stylesheet" href="/assets/css/style.css">
-</head>
-<body>
-    <h1>O meni</h1>
-    <a href="\">Moj Homepage</a>
-    <a href="\o-meni">O meni</a>
-    <a href="\moji-projekti">Moji projekti</a>
-    <a href="\blog">Blog</a>
-    <a href="\kontakt">Kontakt</a>
+{% block title %}O meni{% endblock title %}
+
+{% block vsebina %}
+    <h2>O meni</h2>
     <p>Spicy jalapeno bacon ipsum dolor amet flank ham doner,
         jowl drumstick short loin picanha brisket ham hock capicola shank strip steak pork loin.
         Meatball porchetta ham hock filet mignon hamburger cupim flank prosciutto biltong shank
@@ -32,5 +23,4 @@
         Boudin tri-tip landjaeger cow. Ball tip bresaola salami spare ribs sirloin pancetta ham strip steak bacon hamburger turducken.
         Kielbasa frankfurter pork loin sirloin alcatra drumstick jowl beef biltong bresaola capicola.
         Cow spare ribs sausage pork chop filet mignon picanha.</p>
-</body>
-</html>
+{% endblock vsebina %}

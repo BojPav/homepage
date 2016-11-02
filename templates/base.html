@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+        <title>{% block title %}{% endblock title %}</title>
+        <link rel="stylesheet" href="/assets/css/style.css">
+    </head>
+
+    <body>
+
+        <h1>Moj Homepage</h1>
+        <a href="\" class="btn btn-primary btn-lg">Moj Homepage</a>
+        <a href="\o-meni" class="btn btn-primary btn-lg">O meni</a>
+        <a href="\moji-projekti" class="btn btn-primary btn-lg">Moji projekti</a>
+        <a href="\blog" class="btn btn-primary btn-lg">Blog</a>
+        <a href="\kontakt" class="btn btn-primary btn-lg">Kontakt</a>
+
+        <br>
+        <br>
+
+        {% block vsebina %}{% endblock vsebina %}
+    </body>
+</html>

@@ -1,18 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title>Blog</title>
+{% extends "base.html" %}
 
-    <link rel="stylesheet" href="/assets/css/style.css">
-</head>
-<body>
-    <h1>Moj Blog</h1>
-    <a href="\">Moj Homepage</a>
-    <a href="\o-meni">O meni</a>
-    <a href="\moji-projekti">Moji projekti</a>
-    <a href="\blog">Blog</a>
-    <a href="\kontakt">Kontakt</a>
+{% block title %}Blog{% endblock title %}
+
+{% block vsebina %}
+    <h2>Blog</h2>
     <p>Chicken porchetta beef ribs, jerky boudin pig pork chop short ribs.
         Filet mignon kielbasa jowl ham hock short ribs jerky bacon cupim.
         Tongue sausage pastrami chicken jerky pork belly porchetta ham hock sirloin.
@@ -31,5 +22,4 @@
         Boudin prosciutto salami flank kielbasa shankle venison jowl corned beef t-bone doner.
         Corned beef drumstick cupim rump, shankle shank tri-tip swine landjaeger jerky bresaola andouille ball tip fatback.
         Pancetta short ribs boudin porchetta, venison pork loin brisket bacon picanha jerky pig pork chop ball tip spare ribs.</p>
-</body>
-</html>
+{% endblock vsebina %}
